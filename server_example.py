@@ -14,17 +14,27 @@ mydb = mysql.connector.connect(
     database = "baseid"
     )
 """
+
 mydb = mysql.connector.connect(
     host = "localhost",
     user = "root",
     passwd = "popolo69"   )
 mycursor = mydb.cursor()
-sql = "DROP DATABASE "+ "base9357800120222" #Permet de delete la database à droite du +
+sql = "DROP DATABASE "+ "base5829910130222" #Permet de delete la database à droite du +
 mycursor.execute(sql)
 
 #mycursor.execute("CREATE DATABASE BaseId")
 
-
+"""
+mydb = mysql.connector.connect(
+    host = "localhost",
+    user = "root",
+    passwd = "popolo69",
+    database = "baseid")
+mycursor = mydb.cursor()
+#sql = "DROP TABLE "+ "id" #Permet de delete la database à droite du +
+#mycursor.execute(sql)
+"""
 """
 mycursor.execute("SELECT age FROM students")
 # mycursor.execute("SELECT * FROM students") Va retourner tout le tableau
@@ -55,6 +65,7 @@ mycursor.executemany(sqlFormula, students)
 
 
 #mycursor.execute("CREATE TABLE ID (ID VARCHAR(255), Password VARCHAR(255))") #Permet de créer une table
+#mydb.commit()
 
 """
 Permet de voir les différentes databases dans le serveur
