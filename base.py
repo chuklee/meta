@@ -40,7 +40,7 @@ class Base:
             mydb = mysql.connector.connect(
                 host = "localhost",
                 user = "root",
-                passwd = "popolo69",
+                passwd = "toset",
                 database = "baseid"
                 )
             mycursor = mydb.cursor()
@@ -56,7 +56,7 @@ class Base:
             mydb = mysql.connector.connect(
                 host = "localhost",
                 user = "root",
-                passwd = "popolo69",
+                passwd = "toset",
                 )
             mycursor = mydb.cursor()
             newdata = str("CREATE DATABASE base" + str(identifiant)) #Ici je suis obligé de mettre base devant car ca ne prend pas seulement les nombres meme si se sont des str de base
@@ -67,7 +67,7 @@ class Base:
             mydb = mysql.connector.connect(
                 host = "localhost",
                 user = "root",
-                passwd = "popolo69",
+                passwd = "toset",
                 database = "base" + str(identifiant)
                 )
             mycursor = mydb.cursor()
