@@ -18,7 +18,7 @@ def loginbase(): #Attention la tu te login dans une base et non dans un neurone
     mydb = mysql.connector.connect(
     host = "localhost",
     user = "root", #↓Attention, pour éviter les attaques, il faut changer d'id et limiter le nb de connexion
-    passwd = "popolo69",
+    passwd = "toset",
     database = "baseid")
     cursor = mydb.cursor()
     cursor.execute("SELECT * FROM id")
@@ -30,7 +30,7 @@ def loginbase(): #Attention la tu te login dans une base et non dans un neurone
             mydb = mysql.connector.connect(
             host = "localhost",
             user = "root",
-            passwd = "popolo69",
+            passwd = "toset",
             database = "base"+identifiant)
             cursor = mydb.cursor()
             #Ici on s'occupe des basics de la base, on fait les neurones après
